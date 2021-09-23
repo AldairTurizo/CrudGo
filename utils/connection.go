@@ -11,7 +11,7 @@ import (
 
 // GetConnection obtiene una conexión a la base de datos
 func GetConnection() *gorm.DB {
-	db, err := gorm.Open("mysql", "root:root@/tienda?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "root:@/tienda?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		log.Fatal(err)
 	}

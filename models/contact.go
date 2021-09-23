@@ -2,13 +2,14 @@ package models
 
 import "github.com/jinzhu/gorm"
 
-// Contact modelo para contactos
-type Contact struct {
+// Contact modelo para clientos
+type Client struct {
 	gorm.Model
-	Nombre      string `json:"nombre"`
-	Edad        uint   `json:"edad"`
-	Telefono    string `json:"telefono" gorm:"size:20"`
-	Direccion   string `json:"direccion"`
-	Email       string `json:"email"`
-	Descripcion string `json:"descripcion" gorm:"type:TEXT"`
+	Nombres   string `json:"nombres"`
+	Apellidos string `json:"apellidos"`
+	Telefono  string `json:"telefono"`
+	Barrio    string `json:"barrio"`
+	Direccion string `json:"direccion"`
+	Email     string `json:"email"`
+	UrlImages  string `json:"url_images"`
 }
