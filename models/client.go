@@ -11,5 +11,5 @@ type Client struct {
 	Barrio    string `json:"barrio"`
 	Direccion string `json:"direccion"`
 	Email     string `json:"email"`
-	UrlImages  string `json:"url_images"`
+	UrlImages string `json:"url_images"`
 }
